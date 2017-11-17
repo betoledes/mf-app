@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+	<script src="funciones.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+<body>
+	<nav class="navegacion">
+		<h1>Inicio</h1>
+	</nav>
+	<div class="contenedor">		
+	
+		<div class="promo">
+			<h1>Promociones <i class="fa fa-chevron-circle-down" onclick="extender('promos')" id="c-promos"></i></h1>
+			<div id="promos">
+			</div>
+		</div>
+
+		<div class="cafe">
+			<h1>Cafeterías <i class="fa fa-chevron-circle-down" onclick="extender('cafes')" id="c-cafes"></i></h1>
+			<div id="cafes">	
+			</div>
+		</div>
+
+		<div class="postres">
+			
+		</div>
+
+		<div class="masVendido">
+			<h1>Lo + vendido <i class="fa fa-chevron-circle-down" onclick="extender('mVendido')" id="c-mVendido"></i></h1>
+			<div id="mVendido">
+				
+			</div>
+		</div>
+
+	</div>
+	<nav class="menu">
+		<ul>
+			<li class="navInicio activo" onclick="navegar('inicio')"><i class="fa fa-home fa-2x iconActivo"></i></li>
+		</ul>
+
+		<ul>
+			<li class="navInicio" onclick="navegar('menu')"><i class="fa fa-bars"></i></li>
+		</ul>
+
+		<ul>
+			<li class="navInicio" onclick="navegar('buscar')"><i class="fa fa-search"></i></li>
+		</ul>
+
+		<ul>
+			<li class="navInicio" onclick="navegar('carrito')"><i class="fa fa-shopping-basket"></i></li>
+		</ul>
+
+		<ul>
+			<li class="navInicio" onclick="navegar('perfil')"><i class="fa fa-user"></i></li>
+		</ul>
+
+	</nav>
+</body>
+</html>
